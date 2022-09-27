@@ -1,0 +1,74 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body,
+html {
+  height: 100%;
+  margin:0
+}
+
+.bgimg {
+  /* Background image */
+  background-image: url("background.jpg");
+  /* Full-screen */
+  height: 100vh;
+  width: 100vw;
+  /* Hide overflow of image */
+  overflow: hidden;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative; 
+}
+
+h1, p {
+    /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Add a shadow to the text */
+  text-shadow: 2px 2px #000000c5;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* Position logo in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.logo {
+  width: 200px;  
+  max-width: 50vw;
+  margin: 1em
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
